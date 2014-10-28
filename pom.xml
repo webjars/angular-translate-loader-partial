@@ -52,6 +52,16 @@
         <upstream.version>2.0.0</upstream.version>
         <upstream.url>https://raw.githubusercontent.com/angular-translate/bower-angular-translate-loader-partial/${upstream.version}</upstream.url>
         <destDir>${project.build.outputDirectory}/META-INF/resources/webjars/${project.artifactId}/${upstream.version}</destDir>
+        <requirejs>
+            {
+                "paths": {
+                    "angular-translate-loader-partial": "angular-translate-loader-partial"
+                },
+                "shim": {
+                    "angular-translate-loader-partial": ["angular"]
+                }
+            }
+        </requirejs>
     </properties>
     
     <build>
