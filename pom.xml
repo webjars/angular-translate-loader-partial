@@ -63,7 +63,7 @@
                     "angular-translate-loader-partial": "angular-translate-loader-partial"
                 },
                 "shim": {
-                    "angular-translate-loader-partial": ["angular"]
+                    "angular-translate-loader-partial": ["angular", "angular-translate"]
                 }
             }
         </requirejs>
